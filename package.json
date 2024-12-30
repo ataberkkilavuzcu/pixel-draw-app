@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc && webpack",
     "start": "node dist/server/server.js",
-    "dev": "ts-node src/server/server.ts"
+    "dev": "nodemon --exec ts-node src/server/server.ts",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "express": "^4.17.1",
